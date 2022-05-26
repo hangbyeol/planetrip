@@ -42,11 +42,7 @@
         user-select: none;
       }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+
 
       .b-example-divider {
         height: 3rem;
@@ -84,6 +80,56 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+
+
+     .content {
+       position : relative;
+       text-align: right;
+       top : 30% ;
+       left :-30% ;
+       font-size: 120px;
+       color : white;
+       font-weight: bolder;
+     }
+
+     input  {
+       padding: 7px;
+       background-color: black;
+       border-radius: 10px ;
+       border :1px solid white ;
+       color :white;
+       position : absolute;
+       top : 53% ;
+       left :64% ;
+       font-size: 45px;
+
+     }
+
+
+
+      @media (max-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+
+        input {
+          top : 58% ;
+          left :55% ;
+          font-size: 35px;
+
+
+        }
+
+        .content {
+          top : 40% ;
+          left :-30% ;
+          font-size: 100px;
+
+
+        }
+      }
+
     </style>
 
 
@@ -93,7 +139,7 @@
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-none">
         <div class="container-fluid">
           <a class="navbar-brand" href="index_main.html">PlanetTrip</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,10 +163,14 @@
       </nav>
     </header>
 
-
+<button class="btn btn-primary btn-lg" type="button">Example button</button>
   <main class="px-3">
     <div id="bg">
     <img src="img/space_bg.jpg" alt="">
+    <p class="content">Cool<br>Phrase</p>
+
+    <a href="index_main.html"><input type="button" value="Go Trip"></a>
+
   </div>
   </main>
 

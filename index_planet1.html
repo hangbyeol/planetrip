@@ -57,14 +57,14 @@
         width: 70%;
         padding: 20px;
         margin-bottom: 20px;
-        float: left;
+
 
       }
       #jb-sidebar {
         width: 30%;
         padding: 20px;
         margin-bottom: 20px;
-        float: left;
+
 
       }
       #jb-footer {
@@ -122,8 +122,8 @@
           display: grid;
           grid-template-columns: 2fr 2fr;
           grid-auto-rows: minmax(5Fr, auto);
-          row-gap: 20px;
-          column-gap: 20px;
+          row-gap: 50px;
+          column-gap: 50px;
 
           text-align: center;
 
@@ -131,15 +131,21 @@
 
 .contain {
   padding: 20px;
-  margin :auto;
+  margin: 10px 20px 10px -80px;
 flex-direction: row;
-background-color: skyblue;
+background-color: none;
+
 }
 
 #guide {
   text-align: center;
 }
 
+.middleimg {
+  padding : 5px;
+  margin : 20px;
+  border : 0.75px solid white;
+}
 
 
 
@@ -167,6 +173,9 @@ background-color: skyblue;
           grid-template-columns: 1fr;
           grid-auto-rows: minmax(2Fr, auto);
         }
+        .contain {
+
+        }
       }
     </style>
 
@@ -191,7 +200,7 @@ background-color: skyblue;
                     <a class="nav-link " aria-current="page" href="index_manual.html">안내</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="index_planet.html">여행지</a>
+                    <a class="nav-link active" href="index_planet.html">여행지</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link " href="index_service.html">서비스</a>
@@ -219,12 +228,47 @@ background-color: skyblue;
     </div>
     <div id="jb-content">
       <h2>Description</h2>
-      <p style="color:gray">지각의 93퍼가 물에 잠겨 있는 지구와 비슷한 암석형 행성.<br>
-        지구의 초기 생태계와 비슷하여 연구가치가 높다.<br>
- 잠수정이나 해저 케이블카로 해저 탐험 위주의 관광을 진행한다.<br>
-수증기로 인한 온실효과로 모항성과의 거리가 조금 멀지만 적당한 온도를 유지하고 있다.   </p>
-    </div>
+      <p style="color:gray">Ob42-P를 모항성으로 둔 4번째 괘도의 행성
+        지각의 93%가 물에 잠겨 있는 지구와 비슷한 암석형 행성이다.
+        수증기로 인한 온실 효과로 지구보다 평균 온도가 높고 비가 매우 자주 온다.
+        해양 생태계가 발달되어 있어 해저 위주의 관광을 하며
+        현재 해저 기지가 수심 2300미터 까지 완공되어 있다.
+        해당 해저기지에서 수많은 해양연구원들이 이 행성을 연구 중이다.
 
+   </p>
+    <br><br><br>
+
+    <h3 id="guide">관광 가이드</h3>
+
+    <hr style="color:white">
+
+    <div id="wrapper">
+      <div class="contain">
+      <h4>해저 탐험</h4>
+      <img class="middleimg" src="img/white.jpg" width="300px" height="180px">
+
+
+
+      </div>
+      <div class="contain">
+      <h4>해저 케이블카</h4>
+      <img class="middleimg" src="img/white.jpg" width="300px" height="180px">
+
+      </div>
+
+      <div class="contain">
+      <h4>해저 기지 견학</h4>
+      <img class="middleimg" src="img/white.jpg" width="300px" height="180px">
+
+      </div>
+
+      <div class="contain">
+      <h4>무인도 여행</h4>
+      <img class="middleimg" src="img/white.jpg" width="300px" height="180px">
+
+      </div>
+
+    </div>
 
     <div id="jb-sidebar">
       <h4 class="fst-italic">Planet</h4>
@@ -241,36 +285,7 @@ background-color: skyblue;
 
 
 
-    <h2 id="guide">관광 가이드</h2>
 
-    <hr style="color:white">
-
-    <div id="wrapper">
-      <div class="contain">
-      <h2>관광1</h2>
-      <img src="img/white.jpg" width="200px" height="100px">
-        <p>내용</p>
-
-      </div>
-      <div class="contain">
-      <h2>관광2</h2>
-      <img src="img/white.jpg" width="200px" height="100px">
-        <p>내용</p>
-      </div>
-
-      <div class="contain">
-      <h2>관광3</h2>
-      <img src="img/white.jpg" width="200px" height="100px">
-        <p>내용</p>
-      </div>
-
-      <div class="contain">
-      <h2>관광4</h2>
-      <img src="img/white.jpg" width="200px" height="100px">
-        <p>내용</p>
-      </div>
-
-    </div>
 
 
 
