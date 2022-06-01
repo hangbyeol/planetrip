@@ -86,25 +86,25 @@
      .content {
        position : relative;
        text-align: right;
-       top : 30% ;
+       top : 32% ;
        left :-30% ;
-       font-size: 120px;
+       font-size: 100px;
        color : white;
        font-weight: bolder;
      }
 
-     input  {
-       padding: 7px;
-       background-color: black;
-       border-radius: 10px ;
-       border :1px solid white ;
-       color :white;
-       position : absolute;
-       top : 53% ;
-       left :64% ;
-       font-size: 45px;
-
+     #next {
+       width: 180px;
+       height: 90px;
+       position:fixed;
+       bottom: 57%;
+       right: 10%;
+       background-color:transparent;
+       border :none;
      }
+
+
+
 
 
 
@@ -124,11 +124,21 @@
         .content {
           top : 40% ;
           left :-30% ;
-          font-size: 100px;
+          font-size: 70px;
+        }
 
-
+        #next {
+          width: 90px;
+          height: 45px;
+          position:fixed;
+          bottom: 49%;
+          right: 27%;
+          background-color:transparent;
+          border :none;
         }
       }
+
+
 
     </style>
 
@@ -163,13 +173,15 @@
       </nav>
     </header>
 
-<button class="btn btn-primary btn-lg" type="button">Example button</button>
+
   <main class="px-3">
     <div id="bg">
-    <img src="img/space_bg.jpg" alt="">
-    <p class="content">Cool<br>Phrase</p>
+    <img src="img/planet_bg.jpg" alt="">
+    <p class="content">Wherever<br>You Want</p>
 
-    <a href="index_main.html"><input type="button" value="Go Trip"></a>
+    <a href="index_main.html">
+      <button type="button" class="btm_image" id="next"><img  src="img/GoTrip.png" ></button></a>
+
 
   </div>
   </main>
