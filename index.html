@@ -25,13 +25,20 @@
         padding: 0;
         height: 100%;
     }
-    .bgimg {
+    #bg {
         border: 0;
         padding: 0;
         background-image: url('image.jpg');
         min-height: 100%;
         background-position: center;
         background-size: cover;
+
+    }
+
+    main {
+      position: relative;
+      top: 50%;
+      left: 50%;
     }
 
       .bd-placeholder-img {
@@ -83,25 +90,25 @@
 
 
 
-     .content {
-       position : relative;
-       text-align: right;
-       top : 32% ;
-       left :-30% ;
-       font-size: 100px;
-       color : white;
-       font-weight: bolder;
-     }
+      .content {
+        position : absolute;
+        text-align: right;
+        top : 40% ;
+        right : 30% ;
+        font-size: 100px;
+        color : white;
+        font-weight: bolder;
+      }
 
-     #next {
-       width: 180px;
-       height: 90px;
-       position:fixed;
-       bottom: 57%;
-       right: 10%;
-       background-color:transparent;
-       border :none;
-     }
+      #next  {
+          position : absolute;
+          top:65%;
+          right :0% ;
+        width: 180px;
+        height: 90px;
+        background-color:transparent;
+        border :none;
+      }
 
 
 
@@ -113,28 +120,9 @@
           font-size: 3.5rem;
         }
 
-        input {
-          top : 58% ;
-          left :55% ;
-          font-size: 35px;
-
-
-        }
-
         .content {
-          top : 40% ;
-          left :-30% ;
-          font-size: 70px;
-        }
 
-        #next {
-          width: 90px;
-          height: 45px;
-          position:fixed;
-          bottom: 49%;
-          right: 27%;
-          background-color:transparent;
-          border :none;
+          font-size: 70px;
         }
       }
 
@@ -177,13 +165,18 @@
   <main class="px-3">
     <div id="bg">
     <img src="img/planet_bg.jpg" alt="">
-    <p class="content">Wherever<br>You Want</p>
+    <div class="content">
+      <p>Wherever<br>You Want</p>
+      <br>
+        <a href="index_main.html">
+          <button type="button" class="btm_image" id="next"><img  src="img/GoTrip.png" >
+          </button>
+        </a>
+    </div>
+</div>
 
-    <a href="index_main.html">
-      <button type="button" class="btm_image" id="next"><img  src="img/GoTrip.png" ></button></a>
 
 
-  </div>
   </main>
 
   <footer class="mt-auto text-white-50">
@@ -191,7 +184,7 @@
   </footer>
 </div>
 
-
+<script src="js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>

@@ -1,11 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="kr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-<link href="css/carousel.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>PlanetTrip</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+
+
+
+
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -38,27 +46,26 @@ body {
 
 
 #wrapper {
-  width: 70%;
-
+  width: 90%;
   margin :0 auto;
   text-align: center;
-  display: flex;
-  flex-basis: auto;
-  flex-wrap: wrap;
-      gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4em;
   }
 
 
 .contain {
-  max-width: 800px;
-      margin: 0 auto;
+  margin: 0 auto;
 
 }
-    
+
 .middleimg {
+  max-width: 100%;
+  height: auto;
   border: 1px solid white;
     }
-  
+
 
 #jb-footer {
   height: 200px;
@@ -87,10 +94,41 @@ body {
   border :none;
 }
 
+#videosList {
+  margin:50px auto;
+ max-width: 70%;
+  overflow: hidden;
+}
+
+.video {
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+table {
+  text-align: center;
+    margin-bottom: 100px;
+    width: 100%;
+    border-top: 1px solid white;
+    border-collapse: collapse;
+  }
+  td {
+    color: grey;
+    border-bottom: 1px solid white;
+    padding: 20px;
+  }
+
+  th {
+    border-bottom: 1px solid grey;
+    padding: 20px;
+  }
 
 
 
-@media ( max-width: 515px ) {
+
+
+@media ( max-width: 1000px ) {
   h2, h3{
     text-align: center;
 
@@ -121,42 +159,51 @@ body {
   }
 
   #before, #next {
-    display: none;
+    bottom: 20px;
   }
+
+  table {
+    font-size: 13px;
+  }
+
+
+
 
 
 }
 
 
   </style>
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
 
 </head>
 <body>
 
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index_main.html">PlanetTrip</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="index_manual.html">안내</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="index_planet.html">여행지</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="index_service.html">서비스</a>
-              </li>
-            </ul>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index_main.html">PlanetTrip</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index_manual.html">안내</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index_planet1.html">여행지</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="index_service.html">서비스</a>
+            </li>
+          </ul>
 
-          </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
 <main>
 
@@ -174,13 +221,35 @@ body {
     <hr style="color:white">
 
     <div id="jb-header">
-<img  id="venetum_first" src="img/venetum_first.png">
+      <div id="videosList">
+        <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" autoplay loop muted preload="bbb" poster="" class="video">
+      <source src="videos/planet1.mp4" type="video/mp4">
+      zzz
+    </video>
+      </div>
     </div>
     <div id="jb-content">
+      <table>
+<tr>
+  <td>공전 주기(P)</td>
+  <td>부피</td>
+  <td>평균 밀도</td>
+  <td>자전 주기</td>
+  <td>평균 온도</td>
+  <td>대기압</td>
+</tr>
+<tr>
+  <th>297. 47301 일</th>
+  <th>0.9351×10⁹ km²</th>
+  <th>7.523 g/cm³</th>
+  <th>0.721 125 일</th>
+  <th>약 22℃</th>
+  <th>87 k㎩</th>
+</tr>
+      </table>
 
 
-
-      <h2 >Description</h2>
+      <h2 >소개</h2>
       <hr style="color:white"><br />
       <p style="color:gray">Ob42-P를 모항성으로 둔 4번째 괘도의 행성
         지각의 93%가 물에 잠겨 있는 지구와 비슷한 암석형 행성이다.<br />
@@ -200,26 +269,26 @@ body {
   <div id="wrapper">
     <div class="contain">
     <h5>해저 탐험</h5>
-    <img class="middleimg" src="img/Guide2.png" width="300px" height="180px">
+    <img class="middleimg" src="img/Guide2.png">
 
 
 
     </div>
     <div class="contain">
     <h5>해저 케이블카</h5>
-    <img class="middleimg" src="img/Guide1.png" width="300px" height="180px">
+    <img class="middleimg" src="img/Guide1.png">
 
     </div>
 
     <div class="contain">
     <h5>해저 기지 견학</h5>
-    <img class="middleimg" src="img/white.jpg" width="300px" height="180px">
+    <img class="middleimg" src="img/Guide4.png">
 
     </div>
 
     <div class="contain">
     <h5>무인도 여행</h5>
-    <img class="middleimg" src="img/white.jpg" width="300px" height="180px">
+    <img class="middleimg" src="img/Guide3.png">
 
     </div>
 
@@ -240,11 +309,13 @@ body {
         <button type="button" class="btm_image" id="before"> <img  src="img/before.png" width="50px" height="50px"></button>
 
 
-      <a href="index_planet3.html">
+      <a href="index_planet2.html">
         <button type="button" class="btm_image" id="next"><img  src="img/next.png" width="50px" height="50px"></button>
       </a>
     </footer>
-    </div>
 
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
 
 </html>
