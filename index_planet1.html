@@ -17,7 +17,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-  main {
+  main {line-height: 250%;
     margin : 50px auto;
     font-family: "윤고딕";
   }
@@ -107,6 +107,7 @@ body {
 }
 
 table {
+  font-size: 15px;
   text-align: center;
     margin-bottom: 100px;
     width: 100%;
@@ -123,8 +124,6 @@ table {
     border-bottom: 1px solid grey;
     padding: 20px;
   }
-
-
 
 
 
@@ -165,13 +164,20 @@ table {
   table {
     font-size: 13px;
   }
-
-
-
-
-
+  td, th {
+    padding: 10px;
+  }
 }
 
+@media ( max-width: 500px ) {
+  table {
+    font-size: 11px;
+
+  }
+  td, th {
+    padding: 5px;
+  }
+}
 
   </style>
   <!-- Custom styles for this template -->
@@ -193,7 +199,7 @@ table {
               <a class="nav-link " aria-current="page" href="index_manual.html">안내</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index_planet1.html">여행지</a>
+              <a class="nav-link active" href="index_planet1.html">여행지</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="index_service.html">서비스</a>
@@ -214,7 +220,7 @@ table {
 
     <div id="jb-head">
     <h1>Venetum</h1>
-    <p style="color:skyblue" >"한마디 부가설명"</p>
+    <p style="color:skyblue" >"바다로 이루어진 푸른 행성"</p>
 
     </div>
 
@@ -253,16 +259,30 @@ table {
       <hr style="color:white"><br />
       <p style="color:gray">Ob42-P를 모항성으로 둔 4번째 괘도의 행성
         지각의 93%가 물에 잠겨 있는 지구와 비슷한 암석형 행성이다.<br />
-        수증기로 인한 온실 효과로 지구보다 평균 온도가 높고 비가 매우 자주 온다.
-        해양 생태계가 발달되어 있어 해저 위주의 관광을 하며
-        현재 해저 기지가 수심 2300미터 까지 완공되어 있다.
-        해당 해저기지에서 수많은 해양연구원들이 이 행성을 연구 중이다.
+        수증기로 인한 온실 효과로 지구보다 평균 온도가 높고 비가 매우 자주 온다.<br />
+        해양 생태계가 발달되어 있어 해저 위주의 관광을 진행한다.<br />
+        </p><br />
+        <h5>해저 기지</h5>
 
-   </p>
+        <p style="color:gray">
+          해당 행성의 생태계를 연구하기 위해 건설된 해저 기지가 존재한다.<br />
+          현재 수심 2300미터 까지 완공되어 있으며 2500미터까지 공사를 진행 중이다.<br />
+          수많은 해양연구원들이 기지에서 연구를 진행하고 있다.<br />
+       </p><br />
+
+       <h5>위성</h5>
+
+       <p style="color:gray">
+         2개의 위성이 Venetum의 궤도를 따라 돌고 있다.<br />
+         두개 중 한개의 위성은 거리가 멀어 점점 궤도를 벗어 나는 중이며 약 14억년 후 완전히 궤도에서 벗어 날 것으로 예상된다.<br />
+          </p>
+
+
+
 
   <br><br><br>
 
-  <h3 id="guide">관광 코스</h3>
+  <h3 id="guide">관광 포인트</h3>
 
   <hr style="color:white"><br /><br /><br />
 
@@ -301,21 +321,28 @@ table {
 
 
 
+  <a href="#">
+    <button type="button" class="btm_image" id="before"> <img  src="img/before.png" width="50px" height="50px"></button>
+  </a>
+
+  <a href="index_planet2.html">
+    <button type="button" class="btm_image" id="next"><img  src="img/next.png" width="50px" height="50px"></button>
+  </a>
+
+  </main>
+  <hr class="featurette-divider">
+
+
+  <footer class="container">
+
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p style="color:#424242">&copy; 2022 Lee Han-Byeol</p>
+  </footer>
   </main>
 
-    <footer class="pt-3 mt-4 text-muted">
-      &copy; 2022
 
-        <button type="button" class="btm_image" id="before"> <img  src="img/before.png" width="50px" height="50px"></button>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 
-      <a href="index_planet2.html">
-        <button type="button" class="btm_image" id="next"><img  src="img/next.png" width="50px" height="50px"></button>
-      </a>
-    </footer>
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+  </body>
+  </html>

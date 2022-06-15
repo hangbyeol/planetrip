@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>PlanetTrip</title>
 <link href="css/carousel.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript">
@@ -12,7 +12,7 @@
 
 </script>
   <style>
-  main {
+  main {line-height: 250%;
     margin : 50px auto;
     font-family: "윤고딕";
   }
@@ -160,8 +160,21 @@ table {
   table {
     font-size: 13px;
   }
+  td, th {
+    padding: 10px;
+  }
+  }
 
-}
+  @media ( max-width: 500px ) {
+  table {
+    font-size: 11px;
+
+  }
+  td, th {
+    padding: 5px;
+  }
+  }
+
 
 
   </style>
@@ -203,7 +216,7 @@ table {
 
     <div id="jb-head">
     <h1>Earth</h1>
-    <p style="color:darkred" >"한마디 부가설명"</p>
+    <p style="color:darkred" >"과거의 고향"</p>
 
     </div>
 
@@ -240,42 +253,46 @@ table {
 
       <h2 >소개</h2>
       <hr style="color:white"><br />
-      <p style="color:gray">ㅎ아아아악<br />
+      <p style="color:gray">더이상 아무도 살 수 없는 행성<br />
+        계속되는 온난화로 인해 각종 자연재해와 함께 더이상 생명체가 살 수 없게 되었다.<br />
+        이후 가속화되는 온난화가 지구의 물을 모두 증발시키고<br />
+        더 이상 지구가 대기를 붙잡을 수 없을 정도의 온도까지 올라가며 지금의 지구가 되었다.<br />
+         </p><br />
+        <h5>REBLUE Project</h5>
+        <p style="color:gray">
+           지구를 푸른별로 다시 돌리기 위한 미련으로 진행된 프로젝트이다.<br />
+          프로그래밍된 Ai가 지구주변을 공전하면서 계획을 진행중이지만<br />
+          갖은 시도에도 불구하고 미미한 변화가 없어 흐지부지 되고 있는 상태이다.<br />
+          현재는 거주할 수 있는 다른 행성이 많은데도 해당 행성에<br />
+          거액의 투자를 한다고 상당히 많은 비판을 받았다.<br />
 
 
-   </p>
+        <br />
+        </p><br />
+
+
+
 
   <br><br><br>
 
-  <h3 id="guide">관광 코스</h3>
+  <h3 id="guide">관광 포인트</h3>
 
   <hr style="color:white"><br /><br /><br />
 
   <div id="wrapper">
     <div class="contain">
-    <h5>해저 탐험</h5>
-    <img class="middleimg" src="img/Guide2.png">
+    <h5>달 탐사</h5>
+    <img class="middleimg" src="img/planet4_1.png">
 
 
 
     </div>
     <div class="contain">
-    <h5>해저 케이블카</h5>
-    <img class="middleimg" src="img/Guide1.png">
+    <h5>재현 체험</h5>
+    <img class="middleimg" src="img/planet4_2.png">
 
     </div>
 
-    <div class="contain">
-    <h5>해저 기지 견학</h5>
-    <img class="middleimg" src="img/Guide4.png">
-
-    </div>
-
-    <div class="contain">
-    <h5>무인도 여행</h5>
-    <img class="middleimg" src="img/Guide3.png">
-
-    </div>
 
   </div>
   <div id="jb-footer">
@@ -294,7 +311,7 @@ table {
         <button type="button" class="btm_image" id="before"> <img  src="img/before.png" width="50px" height="50px"></button>
       </a>
 
-      <a href="index_planet5.html">
+      <a href="#">
         <button type="button" class="btm_image" id="next"><img  src="img/next.png" width="50px" height="50px"></button>
       </a>
     </footer>

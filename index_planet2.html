@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>PlanetTrip</title>
 <link href="css/carousel.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript">
@@ -12,7 +12,7 @@
 
 </script>
   <style>
-  main {
+  main {line-height: 250%;
     margin : 50px auto;
     font-family: "윤고딕";
   }
@@ -160,8 +160,21 @@ table {
   table {
     font-size: 13px;
   }
+  td, th {
+    padding: 10px;
+  }
+  }
 
-}
+  @media ( max-width: 500px ) {
+  table {
+    font-size: 11px;
+
+  }
+  td, th {
+    padding: 5px;
+  }
+  }
+
 
 
   </style>
@@ -203,7 +216,7 @@ table {
 
     <div id="jb-head">
     <h1>Stella</h1>
-    <p style="color:yellow" >"한마디 부가설명"</p>
+    <p style="color:yellow" >"초신성의 조각"</p>
 
     </div>
 
@@ -228,53 +241,56 @@ table {
   <td>대기압</td>
 </tr>
 <tr>
-  <th>297. 47301 일</th>
-  <th>0.9351×10⁹ km²</th>
-  <th>7.523 g/cm³</th>
-  <th>0.721 125 일</th>
-  <th>약 22℃</th>
-  <th>87 k㎩</th>
+  <th>38. 2145 일</th>
+  <th>0.5981×10⁴ km²</th>
+  <th>34. 57132 g/cm³</th>
+  <th>0.2487 일</th>
+  <th>약 145℃</th>
+  <th>289 k㎩</th>
 </tr>
       </table>
 
 
       <h2 >소개</h2>
       <hr style="color:white"><br />
-      <p style="color:gray">모두의 관념에서 생겨난 형태 그대로 구성된 행성.
+      <p style="color:gray"> 모두의 관념속의 형태로 존재하는 행성. <br />
+        구 형태가 아닌 다섯개의 꼭짓점을 가지고 있다.
+        항성의 기준 바로 직전의 상태로 부피가 작으나 매우 높은 밀도로 구성되어 있다.<br />
+        좀 더 많은 질량을 가졌다면 행성이 아닌 항성으로 될 가능성도 상당히 가지고 있었다.<br />
+      </p><br />
 
-   </p>
+        <h5>지층</h5>
+        <p style="color:gray">
+        강한 중력으로 인해 주변의 수 많은 별의 잔해들이 쌓이며 특이한 지층구조를 이뤘다.<br />
+        현재 각 지층의 성분을 연구하고 있으며 각 층의 구성 성분들이 모두 다른 곳에서 왔음을 밝혀냈다.<br />
+        </p><br />
+
+        <h5>대기압</h5>
+        <p style="color:gray">
+        웬만한 장비가 없다면 접근도 못할 정도로 높은 대기압을 가지고 있다. <br />
+        이동식 우주선으로 접근할 수 없어 바로 옆 행성인 poximus에서 다른 기체로 갈아탄 뒤 해당 행성에 착륙이 가능하다.<br />
+        </p><br />
 
   <br><br><br>
 
-  <h3 id="guide">관광 코스</h3>
+  <h3 id="guide">관광 포인트</h3>
 
   <hr style="color:white"><br /><br /><br />
 
   <div id="wrapper">
     <div class="contain">
-    <h5>해저 탐험</h5>
-    <img class="middleimg" src="img/Guide2.png">
+    <h5>관측</h5>
+    <img class="middleimg" src="img/planet2_1.png">
 
 
 
     </div>
     <div class="contain">
-    <h5>해저 케이블카</h5>
-    <img class="middleimg" src="img/Guide1.png">
+    <h5>지층 탐사</h5>
+    <img class="middleimg" src="img/planet2_2.png">
 
     </div>
 
-    <div class="contain">
-    <h5>해저 기지 견학</h5>
-    <img class="middleimg" src="img/Guide4.png">
-
-    </div>
-
-    <div class="contain">
-    <h5>무인도 여행</h5>
-    <img class="middleimg" src="img/Guide3.png">
-
-    </div>
 
   </div>
   <div id="jb-footer">
@@ -285,20 +301,28 @@ table {
 
 
 
+  <a href="index_planet1.html">
+    <button type="button" class="btm_image" id="before"> <img  src="img/before.png" width="50px" height="50px"></button>
+  </a>
+
+  <a href="index_planet3.html">
+    <button type="button" class="btm_image" id="next"><img  src="img/next.png" width="50px" height="50px"></button>
+  </a>
+
+  </main>
+  <hr class="featurette-divider">
+
+
+  <footer class="container">
+
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p style="color:#424242">&copy; 2022 Lee Han-Byeol</p>
+  </footer>
   </main>
 
-    <footer class="pt-3 mt-4 text-muted">
-      &copy; 2022
-      <a href="index_planet1.html">
-        <button type="button" class="btm_image" id="before"> <img  src="img/before.png" width="50px" height="50px"></button>
-      </a>
 
-      <a href="index_planet3.html">
-        <button type="button" class="btm_image" id="next"><img  src="img/next.png" width="50px" height="50px"></button>
-      </a>
-    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-<script src="js/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>
+  </body>
+  </html>

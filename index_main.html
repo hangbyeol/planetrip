@@ -17,6 +17,9 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+    main {
+      line-height: 250%;
+    }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -128,18 +131,18 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#222"/></svg>
+        <img src="img/first.png" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#222"/></svg>
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Best Planet</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>Page Introduce</h1>
+            <p> </p>
+            <p><a class="btn btn-lg btn-primary" href="index_introduce.html">Go to Read</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#222"/></svg>
+        <img src="img/second.png" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#222"/></svg>
 
         <div class="container">
           <div class="carousel-caption">
@@ -150,13 +153,13 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#222"/></svg>
+        <img src="img/third.png" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#222"/></svg>
 
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>Information</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <p></p>
+            <p><a class="btn btn-lg btn-primary" href="index_service.html">Go to Read</a></p>
           </div>
         </div>
       </div>
@@ -186,21 +189,21 @@
         <img src="img/venetum_main.png"   class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
 
         <h2 class="fw-normal">Venetum</h2>
-        <p>간단한 소개글</p>
+        <p style="color:grey">바다로 이루어진 푸른 행성</p>
         <p><a class="btn btn-secondary" href="index_planet1.html">Go Trip &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="img/stella.png"         class="bd-placeholder-img rounded-circle" width="140" height="140"  role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
 
         <h2 class="fw-normal">Stella</h2>
-        <p>간단한 소개글</p>
+        <p style="color:grey">초신성의 결정체</p>
         <p><a class="btn btn-secondary" href="index_planet2.html">Go Trip &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="img/earth.png" class="bd-placeholder-img rounded-circle" width="140" height="140"  role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
 
         <h2 class="fw-normal">Earth</h2>
-        <p>간단한 소개글</p>
+        <p style="color:grey">과거의 고향</p>
         <p><a class="btn btn-secondary" href="index_planet4.html">Go Trip &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -208,12 +211,37 @@
 
     <!-- START THE FEATURETTES -->
 
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Best Planet</h2><br />
+        <p class="lead" style="color:grey">방문한 고객들의 평가 1위<br />
+                                      올해의 가장 인기있는 여행지<br />
+
+                                  극단적인 온도차로 상반된 환경을 한눈에 볼 수 있는 행성
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <div id="videosList">
+          <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" autoplay muted preload="bbb" poster="" class="video">
+        <source src="videos/best_planet.mp4" type="video/mp4">
+        zzz
+      </video>
+    </div>
+      </div>
+    </div>
+
     <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span style="color:white">I found it</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1">New Technology </h2><br />
+        <p class="lead" style="color:grey">자매제약사와 협업하여 새롭게 출시한 캡슐<br />
+                                          부작용은 최소화 하고 포만감은 더 길게</p>
+
       </div>
       <div class="col-md-5">
         <div id="videosList">
@@ -226,31 +254,6 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span style="color:white">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span style="color:white">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
 
     <hr class="featurette-divider">
 
@@ -262,13 +265,13 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p style="color:#424242">&copy; 2022 Lee Han-Byeol</p>
   </footer>
-</main>
+  </main>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
 
 
   </body>
-</html>
+  </html>

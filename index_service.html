@@ -6,15 +6,16 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.98.0">
-    <title>Jumbotron example · Bootstrap v5.2</title>
+    <title>PlanetTrip</title>
+    <script>
+    function btn(){
+        alert('To be continue :)');
+    }
+    </script>
+
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
-
-
-
-
-
-<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <style>
 
@@ -43,6 +44,7 @@
     .f-white {
       color : white;
     }
+
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
@@ -126,30 +128,34 @@
     <div class="p-5 mb-4 bg-light rounded-3 " id="spaceship">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold f-white">우주선 안내</h1>
-        <p class="col-md-8 fs-4 f-white">Using a series of utilities</p>
-        <a href="index_spaceship.html"><button class="btn btn-primary btn-lg" type="button">Example button</button></a>
+        <p class="col-md-8 fs-4 f-white">A spaceship guide</p>
+        <a href="index_spaceship.html"><button class="btn btn-primary btn-lg" type="button">Go To Read</button></a>
       </div>
     </div>
 
       <div class="p-5 mb-4 bg-light rounded-3" id="spacemeal">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold f-white">기내식</h1>
-          <p class="col-md-8 fs-4 f-white">Using a series of utilities</p>
-          <a href=""><button class="btn btn-primary btn-lg" type="button">Example button</button></a>
+          <p class="col-md-8 fs-4 f-white">A spacemeal</p>
+          <a href=""><button class="btn btn-primary btn-lg" type="button" onclick="javascript:btn()">Go To Read</button></a>
         </div>
       </div>
 
 
 
 
-    <footer class="pt-3 mt-4 text-muted border-top">
-      &copy; 2022
-    </footer>
-  </div>
-</main>
-
-<script src="js/bootstrap.bundle.min.js"></script>
+      <hr class="featurette-divider">
 
 
-  </body>
-</html>
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p style="color:#424242">&copy; 2022 Lee Han-Byeol</p>
+      </footer>
+      </main>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+
+      </body>
+      </html>
